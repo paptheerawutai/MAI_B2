@@ -1,0 +1,161 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+.main-dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+ .ticket-card, .overview-card, .stat-card {
+    background: #fff;
+    border-radius: 30px;
+    
+    padding: 20px;
+    text-align: center;
+}
+.stat-card{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.status-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.status-card li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.status-card li:last-child {
+    border-bottom: none;
+}
+
+.ticket-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ticket-card th, .ticket-card td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.ticket-card th {
+    background-color: #f1f1f1;
+}
+
+.overview-card {
+   margin-top: 50px; 
+   grid-column: span 2;
+  
+
+}
+
+
+
+.card-content {
+    position: relative;
+    height: 250px;
+    width: 100%;
+}
+
+.ranking {
+    margin-top: 10px;
+    
+}
+
+.ranking h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.ranking ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    padding-left: 20px;
+}
+
+.ranking ol li {
+    margin-bottom: 1px;
+}
+
+.stats-container {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
+
+.stat-card {
+    margin-top:  10px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.stat-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stat-card li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.stat-card li:last-child {
+    border-bottom: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .stat-card li {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 0;
+        border-bottom: 1px solid #ffffff;
+        font-size: 10px;
+    }
+    .ticket-card, .overview-card, .stat-card {
+        background: #fff;
+        border-radius: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        max-width: 95%;
+    }   
+    .ticket-card table {
+        width: 95%;
+        border-collapse: collapse;
+    }
+    .ticket-card th, .ticket-card td {
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    .stat-card {
+        margin-top:  10px;
+        margin-bottom: 10px;
+        background: #fff;
+        border-radius: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+}

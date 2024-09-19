@@ -1,0 +1,118 @@
+
+.status-text {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.status-text p {
+    margin: 0; 
+    color: #333; 
+    font-family: 'Arial', sans-serif;
+}
+
+.chart-img {
+    width: 100px; 
+    height: 60px; 
+}
+
+/* App containers styling for layout consistency */
+.app-container1, .app-container2, .app-container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 8px;
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 580px;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 100;
+  margin-left: -5%;
+}
+
+
+.app-container1 {
+  margin-top: 50px;
+  
+}
+  
+.app-container2, .app-container3{
+   margin-top: 10px;
+}
+
+.app-container1 , .app-container2, .app-container3 {
+ 
+  /* max-width:50px; */
+  width: 550px;
+
+  padding: 5%;
+  max-width: 95%;
+  margin-left: 0;
+} 
+
+
+.img1, .img2, .img3 {
+  width: 180px; /* Adjust as needed */
+  height: auto;
+  border-radius: 5px;
+  margin-left: 0px;
+  filter: drop-shadow(5px 5px 10px #555);
+}
+
+/*  */
+.machine-activity-log {
+  margin: 20px;
+}
+
+.machine-activity-log ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.machine-activity-log li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.log-time {
+  font-weight: bold;
+  color: #333;
+}
+
+.log-machine {
+  font-style: italic;
+  color: #555;
+}
+
+.log-event {
+  color: #888;
+}
+
+
+
+/* Media Query for small screens */
+@media screen and (max-width: 600px) {
+.status-text {
+    font-size: 16px; 
+}
+
+.app-container1, .app-container2, .app-container3 {
+    width: 350px;
+    max-width: 95%;
+    padding: 10px;
+    margin-left: 0;
+    
+
+}
+
+
+
+}
+
+

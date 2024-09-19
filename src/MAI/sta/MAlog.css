@@ -1,0 +1,39 @@
+
+  
+  @media screen and (max-width: 430px) {
+    body {
+        justify-content: flex-start;
+    }
+    .status-text {
+        font-size: 16px; /* Smaller text on small screens */
+    }
+    .machine-activity-log {
+      margin: 20px;
+      margin-bottom: 50px;
+    }
+    
+    .machine-activity-log ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .machine-activity-log li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .log-time {
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .log-machine {
+      font-style: italic;
+      color: #555;
+    }
+    
+    .log-event {
+      color: #888;
+    }
+    
+}
